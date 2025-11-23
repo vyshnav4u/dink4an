@@ -1,6 +1,6 @@
-# React Neu Template
+# Dink4n | ഡിങ്കൻ 🦸
 
-Helpful utility app for FE development.
+Helpful utility app for FE development 💪
 
 **React JS + Typescript + [Neutralino JS](https://github.com/neutralinojs/neutralinojs)**
 
