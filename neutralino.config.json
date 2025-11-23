@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/neutralinojs/neutralinojs/main/schemas/neutralino.config.schema.json",
   "applicationId": "dinkan",
   "version": "0.0.1",
-  "defaultMode": "browser",
+  "defaultMode": "window",
   "port": 5005,
   "documentRoot": "/fe/dist",
   "url": "/",
@@ -25,8 +25,8 @@
   "modes": {
     "window": {
       "title": "Dink4n | ഡിങ്കൻ",
-      "width": 800,
-      "height": 500,
+      "width": 1200,
+      "height": 600,
       "minWidth": 400,
       "minHeight": 200,
       "center": true,
@@ -37,7 +37,7 @@
       "maximize": false,
       "hidden": false,
       "resizable": true,
-      "exitProcessOnClose": false,
+      "exitProcessOnClose": true,
       "icon": "/assets/dinkan_icon.png"
     },
     "browser": {

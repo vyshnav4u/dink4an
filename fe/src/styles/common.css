@@ -13,3 +13,7 @@
 .flexStart{
     justify-content: start;
 }
+
+.dGrid{
+    display: grid;
+}

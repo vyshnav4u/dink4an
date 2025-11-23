@@ -1,4 +1,6 @@
+import cn from "classnames";
 import { Tabs, type TabsItem } from "../../../ui/Tabs";
+import styles from "./Sidebar.module.css";
 
 const tabs: TabsItem[] = [
   { id: "API", label: "API" },
@@ -8,7 +10,7 @@ const tabs: TabsItem[] = [
 
 export const Sidebar = () => {
   return (
-    <aside>
+    <aside className={cn(styles.sideBarWrap, "dGrid")}>
       <section>Logo</section>
       <Tabs tabs={tabs} direction="vertical" onChange={() => {}} />
     </aside>
