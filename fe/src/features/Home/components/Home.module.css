@@ -6,6 +6,6 @@
 
 .contentWrapper {
     display: grid;
-    grid-template-rows: 300px 1fr;
+    grid-template-rows: 60px 1fr;
     min-height: 100%;
 }

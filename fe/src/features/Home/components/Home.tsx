@@ -1,3 +1,4 @@
+import { Content } from "./Content";
 import styles from "./Home.module.css";
 import Sidebar from "./Sidebar";
 
@@ -7,7 +8,7 @@ export const Home = () => {
       <Sidebar />
       <section className={styles.contentWrapper}>
         <nav>navigation</nav>
-        <main>main body</main>
+        <Content />
       </section>
     </div>
   );
