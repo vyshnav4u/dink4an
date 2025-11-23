@@ -1,6 +1,6 @@
 # React Neu Template
 
-This is template for running light weight desktop application using react 👩‍💻
+Helpful utility app for FE development.
 
 **React JS + Typescript + [Neutralino JS](https://github.com/neutralinojs/neutralinojs)**
 
