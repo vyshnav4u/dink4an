@@ -1,0 +1,75 @@
+{
+  "$schema": "https://raw.githubusercontent.com/neutralinojs/neutralinojs/main/schemas/neutralino.config.schema.json",
+  "applicationId": "dinkan",
+  "version": "0.0.1",
+  "defaultMode": "browser",
+  "port": 5005,
+  "documentRoot": "/fe/dist",
+  "url": "/",
+  "enableServer": true,
+  "enableNativeAPI": true,
+  "tokenSecurity": "one-time",
+  "logging": {
+    "enabled": true,
+    "writeToLogFile": true
+  },
+  "nativeAllowList": ["app.*", "os.*", "debug.log", "filesystem.readDirectory"],
+  "globalVariables": {
+    "TEST1": "Hello",
+    "TEST2": [2, 4, 5],
+    "TEST3": {
+      "value1": 10,
+      "value2": {}
+    }
+  },
+  "modes": {
+    "window": {
+      "title": "Dink4n | ഡിങ്കൻ",
+      "width": 800,
+      "height": 500,
+      "minWidth": 400,
+      "minHeight": 200,
+      "center": true,
+      "fullScreen": false,
+      "alwaysOnTop": false,
+      "enableInspector": true,
+      "borderless": false,
+      "maximize": false,
+      "hidden": false,
+      "resizable": true,
+      "exitProcessOnClose": false,
+      "icon": "/assets/dinkan_icon.png"
+    },
+    "browser": {
+      "globalVariables": {
+        "TEST": "Test value browser"
+      },
+      "nativeBlockList": ["filesystem.*"]
+    },
+    "cloud": {
+      "url": "/resources/#cloud",
+      "nativeAllowList": ["app.*"]
+    },
+    "chrome": {
+      "width": 800,
+      "height": 500,
+      "args": "--user-agent=\"Neutralinojs chrome mode\"",
+      "nativeBlockList": ["filesystem.*", "os.*"]
+    }
+  },
+  "cli": {
+    "binaryName": "Dink4n",
+    "resourcesPath": "/fe/dist",
+    "extensionsPath": "/extensions/",
+    "binaryVersion": "6.3.0",
+    "clientVersion": "6.3.0",
+    "frontendLibrary": {
+      "patchFile": "/fe/index.html",
+      "devUrl": "http://localhost:5174",
+      "projectPath": "/fe/",
+      "initCommand": "npm install",
+      "devCommand": "npm run dev",
+      "buildCommand": "npm run build"
+    }
+  }
+}

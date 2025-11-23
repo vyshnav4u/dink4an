@@ -1,0 +1,11 @@
+.dFlex{
+    display: flex;
+}
+
+.alignCenter{
+    align-items: center;
+}
+
+.flexColumn{
+    flex-direction: column;
+}
