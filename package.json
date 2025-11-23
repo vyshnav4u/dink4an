@@ -1,0 +1,26 @@
+{
+  "name": "dink4an",
+  "version": "1.0.0",
+  "description": "Helpful utility app for FE development 💪",
+  "main": "index.js",
+  "scripts": {
+    "build": "neu build",
+    "neu": "neu run",
+    "react": "cd fe && npm run dev",
+    "start": "concurrently \"npm run react\" \"npm run neu\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vyshnav4u/dink4an.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vyshnav4u/dink4an/issues"
+  },
+  "homepage": "https://github.com/vyshnav4u/dink4an#readme",
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
