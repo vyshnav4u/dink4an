@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "neu build",
+    "preneu": "node scripts/update-neu-config.js",
     "neu": "neu run",
     "react": "cd fe && npm run dev",
     "start": "concurrently \"npm run react\" \"npm run neu\""

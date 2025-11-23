@@ -1,6 +1,6 @@
 {
   "$schema": "https://raw.githubusercontent.com/neutralinojs/neutralinojs/main/schemas/neutralino.config.schema.json",
-  "applicationId": "dinkan",
+  "applicationId": "Dink4n",
   "version": "0.0.1",
   "defaultMode": "window",
   "port": 5005,
@@ -13,10 +13,19 @@
     "enabled": true,
     "writeToLogFile": true
   },
-  "nativeAllowList": ["app.*", "os.*", "debug.log", "filesystem.readDirectory"],
+  "nativeAllowList": [
+    "app.*",
+    "os.*",
+    "debug.log",
+    "filesystem.readDirectory"
+  ],
   "globalVariables": {
     "TEST1": "Hello",
-    "TEST2": [2, 4, 5],
+    "TEST2": [
+      2,
+      4,
+      5
+    ],
     "TEST3": {
       "value1": 10,
       "value2": {}
@@ -44,17 +53,24 @@
       "globalVariables": {
         "TEST": "Test value browser"
       },
-      "nativeBlockList": ["filesystem.*"]
+      "nativeBlockList": [
+        "filesystem.*"
+      ]
     },
     "cloud": {
       "url": "/resources/#cloud",
-      "nativeAllowList": ["app.*"]
+      "nativeAllowList": [
+        "app.*"
+      ]
     },
     "chrome": {
       "width": 800,
       "height": 500,
       "args": "--user-agent=\"Neutralinojs chrome mode\"",
-      "nativeBlockList": ["filesystem.*", "os.*"]
+      "nativeBlockList": [
+        "filesystem.*",
+        "os.*"
+      ]
     }
   },
   "cli": {
@@ -65,7 +81,7 @@
     "clientVersion": "6.3.0",
     "frontendLibrary": {
       "patchFile": "/fe/index.html",
-      "devUrl": "http://localhost:5174",
+      "devUrl": "http://localhost:3006",
       "projectPath": "/fe/",
       "initCommand": "npm install",
       "devCommand": "npm run dev",
