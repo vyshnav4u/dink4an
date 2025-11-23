@@ -21,6 +21,8 @@ export const Tabs = (props: TTabsProps) => {
   const isVertical = direction === "vertical";
 
   const onTabChange = (newTabId: string) => () => {
+    console.log("activeTab", activeTab);
+
     setActiveTab(newTabId);
     onChange(newTabId);
   };

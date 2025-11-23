@@ -1,12 +1,20 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
+import { checker } from "vite-plugin-checker";
 
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [react()],
+  plugins: [
+    react(),
+    checker({
+      typescript: {
+        tsconfigPath: "./tsconfig.app.json",
+      },
+    }),
+  ],
   css: {
     modules: {
-      localsConvention: "camelCaseOnly"
-    }
-  }
-})
+      localsConvention: "camelCaseOnly",
+    },
+  },
+});
