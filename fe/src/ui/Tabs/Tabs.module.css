@@ -4,4 +4,16 @@
 
 .tabsHeader{
     height: 100%;
+    list-style: none;
+}
+
+.tabHeaderItems{
+    width: 100%;
+    padding: var(--space-2);
+    cursor: pointer;
+}
+
+.active{
+    background: var(--bg-secondary);
+    color: var(--text-secondary);
 }

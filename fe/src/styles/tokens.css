@@ -1,0 +1,13 @@
+:root {
+  /* Spacing */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+
+  --border-1: 1px;
+  --border-2: 2px;
+  --border-3: 3px;
+  --border-4: 4px;
+}

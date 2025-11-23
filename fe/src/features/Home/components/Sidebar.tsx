@@ -1,13 +1,15 @@
 import { Tabs, type TabsItem } from "../../../ui/Tabs";
 
 const tabs: TabsItem[] = [
-  { id: "1", label: "Home" },
-  { id: "2", label: "Settings" },
+  { id: "API", label: "API" },
+  { id: "home", label: "Home" },
+  { id: "settings", label: "Settings" },
 ];
 
 export const Sidebar = () => {
   return (
     <aside>
+      <section>Logo</section>
       <Tabs tabs={tabs} direction="vertical" onChange={() => {}} />
     </aside>
   );

@@ -21,8 +21,6 @@ export const Tabs = (props: TTabsProps) => {
   const isVertical = direction === "vertical";
 
   const onTabChange = (newTabId: string) => () => {
-    console.log("activeTab", activeTab);
-
     setActiveTab(newTabId);
     onChange(newTabId);
   };
@@ -30,14 +28,16 @@ export const Tabs = (props: TTabsProps) => {
   return (
     <div className={styles.tabsWrapper}>
       <ul
-        className={cn(styles.tabsHeader, "dFlex alignCenter", {
+        className={cn(styles.tabsHeader, "dFlex alignCenter flexStart", {
           flexColumn: isVertical,
         })}
       >
         {tabs.map((tab) => (
           <li
             key={tab.id}
-            className="tabHeaderItem"
+            className={cn(styles.tabHeaderItems, {
+              [styles.active]: activeTab === tab.id,
+            })}
             onClick={onTabChange(tab.id)}
           >
             {tab.label}
